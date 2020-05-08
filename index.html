@@ -92,6 +92,24 @@
       line-height: 90px;
       margin-bottom: 80px;
     }
+
+    /* animation */
+    #visual > .visual_title > h1,
+    #visual > .visual_title> p {
+      opacity: 0;
+      animation: visual_title 1s ease-in 2s forwards;
+    }
+    #visual > .visual_title> p { animation-delay: 2.5s;}
+    @keyframes visual_title {
+       from {
+        opacity: 0;
+        transform: scale(0,0);
+       }
+       to {
+        opacity: 1;
+        transform: scale(1,1);
+       }
+    }
     #visual > .visual_title > h1 > span {
       font-size: 200px;
       color: orange;
